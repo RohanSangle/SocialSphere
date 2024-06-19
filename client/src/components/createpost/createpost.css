@@ -1,0 +1,31 @@
+.post{
+    position: absolute;
+    width: 45%;
+    height: 15%;
+    top: 82%;
+    left: 33%;
+    background-color: purple;
+}
+.filebtn{
+    position: absolute;
+    width: 30%;
+    height: 20%;
+    left: 5%;
+    top: 30%;
+}
+
+.desc{
+    position: absolute;
+    width: 75%;
+    height: 30%;
+    top: 60%;
+    left: 5%;
+    
+}
+.postbtn{
+    position: absolute;
+    width: 10%;
+    height: 30%;
+    left: 85%;
+
+}

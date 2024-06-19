@@ -25,13 +25,13 @@ export const getPosts = async (req, res) => {
     }
 }
 
-export const latestPosts = async (req, res) => {
-    try {
-        const postMessages = await Post.find().sort({ createdAt: -1 });
-        res.status(200).json({
-            postMessages: postMessages
-        });
-    } catch (error) {
-        res.status(404).json({ message: error.message });
-    }
-}
+// export const latestPosts = async (req, res) => {
+//     try {
+//         const postMessages = await Post.find().sort({ createdAt: -1 });
+//         res.status(200).json({
+//             postMessages: postMessages
+//         });
+//     } catch (error) {
+//         res.status(404).json({ message: error.message });
+//     }
+// }
