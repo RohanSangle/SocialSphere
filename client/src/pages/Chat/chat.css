@@ -62,16 +62,6 @@
 }
 
 
-.content{
-    position: absolute;
-    width: 60%;
-    height: 70%;
-    left: 25%;
-    top: 10%;
-    background-color: chocolate;
-}
-
-
 .user-avatar {
     top: 80%;
     width: 40px;

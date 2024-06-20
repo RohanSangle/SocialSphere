@@ -2,12 +2,12 @@ import React,{useState, useEffect} from 'react'
 import axios from 'axios'
 import './chat.css'
 
-// import {useDispatch} from 'react-redux'
-// import {useSelector} from 'react-redux'
+import {useDispatch} from 'react-redux'
 import {useNavigate} from "react-router-dom";
 import { doSignOut } from '../../firebase/auth';
 import CreatePost from '../../components/createpost/CreatePost';
 import { getPosts } from '../../actions/post';
+import PostContainer from '../../components/postContainer/PostContainer'
 
 const Chat = () => {
   // const [posts, setPosts] = useState([]);
@@ -20,14 +20,11 @@ const Chat = () => {
   //   }
   //   fetchPosts();
   // }, [])
-  // const posts = useSelector((state)=>state.posts)
-  // const dispatch = useDispatch();
+  const dispatch = useDispatch();
 
-  // useEffect(()=>{
-  //   dispatch(getPosts());
-  // },[dispatch]);
-
-  // console.log(posts);
+  useEffect(()=>{
+    dispatch(getPosts());
+  },[dispatch]);
 
   return (
     <>
@@ -45,8 +42,7 @@ const Chat = () => {
       <div className='sidebar'></div>
 
       <CreatePost/>
-
-      <div className='content'></div>
+      <PostContainer/>
     </>
   )
 }
