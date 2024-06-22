@@ -2,6 +2,8 @@ import React,{useState} from 'react'
 import { useDispatch } from 'react-redux';
 import { createPost } from '../../actions/post.js';
 import './createpost.css'
+import { FaFileCirclePlus } from "react-icons/fa6";
+import { FaMessage } from "react-icons/fa6";
 
 const CreatePost = () => {
     const [postData, setPostData] = useState({ imageURL: '', description: '' });
@@ -31,19 +33,22 @@ const CreatePost = () => {
   return (
     <div className='post'>
         <form onSubmit={handleSubmit}>
-            <input 
-                className='filebtn' 
-                type='file' 
-                onChange={handleFileChange}
-            />
-            <input 
-                className='desc' 
-                type="text" 
-                placeholder='message...' 
-                value={postData.description} 
-                onChange={(e) => setPostData({ ...postData, description: e.target.value })} 
-            />
-            <button className='postbtn' type='submit'>Post</button>
+          <div className='posticons'><FaFileCirclePlus /></div>
+          <input 
+              className='filebtn' 
+              type='file' 
+              onChange={handleFileChange}
+          />
+
+          <div className='posticons'><FaMessage /></div>
+          <input 
+              className='desc' 
+              type="text" 
+              placeholder='message...' 
+              value={postData.description} 
+              onChange={(e) => setPostData({ ...postData, description: e.target.value })} 
+          />
+          <button className='postbtn' type='submit'>Post +</button>
         </form>
     </div>
   )

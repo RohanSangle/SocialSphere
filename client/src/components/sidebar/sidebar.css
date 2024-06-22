@@ -1,0 +1,10 @@
+.sidebar{
+    position: absolute;
+    height: 95%;
+    width: 15%;
+    top: 2.5%;
+    left: 84%;
+    /* top: 10%; */
+    border-radius: 20px;
+    background-color: transparent;
+}

@@ -1,31 +1,45 @@
 .post{
     position: absolute;
-    width: 45%;
-    height: 15%;
-    top: 82%;
-    left: 33%;
-    background-color: purple;
+    width: 71%;
+    height: 12.5%;
+    top: 85%;
+    left: 12%;
+    border-radius: 20px;
+    background-color: lightskyblue;
+    color: black;
 }
+
+.posticons{
+    height: 25%;
+    width: 30%;
+    /* margin-bottom: 0.5%; */
+    margin-left: -12%;
+    margin-top: 1.5%;
+}
+
 .filebtn{
     position: absolute;
-    width: 30%;
+    width: 50%;
     height: 20%;
     left: 5%;
-    top: 30%;
+    top: 20%;
 }
 
 .desc{
     position: absolute;
-    width: 75%;
+    width: 80%;
     height: 30%;
-    top: 60%;
+    top: 50%;
     left: 5%;
     
 }
 .postbtn{
     position: absolute;
     width: 10%;
-    height: 30%;
-    left: 85%;
+    height: 60%;
+    left: 88%;
+    margin-top: -3%;
+    border-radius: 10px;
+    font-size: large;
 
 }

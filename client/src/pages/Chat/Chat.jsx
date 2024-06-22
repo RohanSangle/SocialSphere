@@ -1,13 +1,15 @@
 import React,{useState, useEffect} from 'react'
-import axios from 'axios'
+// import axios from 'axios'
 import './chat.css'
 
 import {useDispatch} from 'react-redux'
-import {useNavigate} from "react-router-dom";
-import { doSignOut } from '../../firebase/auth';
+// import {useNavigate} from "react-router-dom";
+// import { doSignOut } from '../../firebase/auth';
 import CreatePost from '../../components/createpost/CreatePost';
 import { getPosts } from '../../actions/post';
 import PostContainer from '../../components/postContainer/PostContainer'
+import MenuBar from '../../components/menubar/MenuBar';
+import Sidebar from '../../components/sidebar/Sidebar';
 
 const Chat = () => {
   // const [posts, setPosts] = useState([]);
@@ -28,19 +30,8 @@ const Chat = () => {
 
   return (
     <>
-      <div className='menubar'>
-        <h1>SocialSphere</h1>
-
-        <div className='user-avatar'>
-          <img src="" alt="" />
-          <button className='logout-button' onClick={()=>{doSignOut().then(()=>{navigate('/')})}}>Logout</button>
-        </div>
-      </div>
-      <div className='headbar'>
-        <h1 className='head'>Chat room</h1>
-      </div>
-      <div className='sidebar'></div>
-
+      <MenuBar/>
+      <Sidebar/>
       <CreatePost/>
       <PostContainer/>
     </>
