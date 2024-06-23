@@ -8,3 +8,20 @@
     border-radius: 20px;
     background-color: transparent;
 }
+
+.membershead{
+    height: 10%;
+}
+
+.list{
+    display: flex;
+    flex-direction: row;
+    height: 90%;
+}
+
+.profileicon{
+    width: 30px;
+    height: 30px;  
+    border-radius: 99;
+    margin-right: 5%;
+}

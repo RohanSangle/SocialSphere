@@ -57,6 +57,11 @@
     height: 70%;
     width: 70%;
     margin-left: -14%;
+    /* background-color: red; */
+    /* fill: red; */
+}
+.likesicon:hover{
+    cursor: pointer;
 }
     
 .likenum{
@@ -74,6 +79,9 @@
     height: 70%;
     margin-left: -5%;
     margin-right: 15%;
+}
+.bookmarksicon:hover{
+    cursor: pointer;
 }
 
 .author{

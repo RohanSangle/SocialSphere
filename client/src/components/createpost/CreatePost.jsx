@@ -6,29 +6,29 @@ import { FaFileCirclePlus } from "react-icons/fa6";
 import { FaMessage } from "react-icons/fa6";
 
 const CreatePost = () => {
-    const [postData, setPostData] = useState({ imageURL: '', description: '' });
-    const dispatch = useDispatch();
+  const [postData, setPostData] = useState({ imageURL: '', description: '' });
+  const dispatch = useDispatch();
 
-    const handleFileChange = (e) => {
-        const file = e.target.files[0];
-        const reader = new FileReader();
-        reader.onloadend = () => {
-          setPostData({ ...postData, imageURL: reader.result });
-        };
-        if (file) {
-          reader.readAsDataURL(file);
-        }
+  const handleFileChange = (e) => {
+      const file = e.target.files[0];
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setPostData({ ...postData, imageURL: reader.result });
       };
-    
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        dispatch(createPost(postData));
-        clear();
+      if (file) {
+        reader.readAsDataURL(file);
+      }
     };
+  
+  const handleSubmit = (e) => {
+      e.preventDefault();
+      dispatch(createPost(postData));
+      clear();
+  };
 
-    const clear = () => {
-        setPostData({ imageURL: '', description: '' });
-    };
+  const clear = () => {
+      setPostData({ imageURL: '', description: '' });
+  };
 
   return (
     <div className='post'>
