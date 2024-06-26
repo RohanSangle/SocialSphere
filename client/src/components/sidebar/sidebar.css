@@ -1,12 +1,12 @@
 .sidebar{
     position: absolute;
     height: 95%;
-    width: 15%;
+    width: 13%;
     top: 2.5%;
-    left: 84%;
+    left: 86%;
     /* top: 10%; */
     border-radius: 20px;
-    background-color: transparent;
+    background-color: #313035;
 }
 
 .membershead{

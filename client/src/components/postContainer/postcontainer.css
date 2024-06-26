@@ -1,19 +1,21 @@
 .content{
     position: absolute;
-    width: 71%;
+    width: 78%;
     height: 81%;
     top: 2.5%;
-    left: 12%;
+    left: 7%;
     /* top: 10%; */
     border-radius: 20px;
-    background-color: white;
+    /* background-color: white; */
+    /* background-color: #10141e; */
+    background-color: #36383f;
     overflow-y:auto;
 
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 300px;
-    gap: 40px;
-    row-gap: 40px;
+    gap: 30px;
+    row-gap: 30px;
     /* column-gap: 40px; */
 }
 

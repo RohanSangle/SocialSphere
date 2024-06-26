@@ -32,24 +32,24 @@ const CreatePost = () => {
 
   return (
     <div className='post'>
-        <form onSubmit={handleSubmit}>
-          <div className='posticons'><FaFileCirclePlus /></div>
-          <input 
-              className='filebtn' 
-              type='file' 
-              onChange={handleFileChange}
-          />
+      <form onSubmit={handleSubmit}>
+        <div className='posticons'><FaFileCirclePlus /></div>
+        <input 
+            className='filebtn' 
+            type='file' 
+            onChange={handleFileChange}
+        />
 
-          <div className='posticons'><FaMessage /></div>
-          <input 
-              className='desc' 
-              type="text" 
-              placeholder='message...' 
-              value={postData.description} 
-              onChange={(e) => setPostData({ ...postData, description: e.target.value })} 
-          />
-          <button className='postbtn' type='submit'>Post +</button>
-        </form>
+        <div className='posticons'><FaMessage /></div>
+        <input 
+            className='desc' 
+            type="text" 
+            placeholder='message...' 
+            value={postData.description} 
+            onChange={(e) => setPostData({ ...postData, description: e.target.value })} 
+        />
+        <button className='postbtn' type='submit'>Post +</button>
+      </form>
     </div>
   )
 }

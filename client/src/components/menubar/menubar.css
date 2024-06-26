@@ -1,21 +1,33 @@
 .menubar{
     position: absolute;
-    width: 10%;
+    width: 5%;
     height: 95%;
     top: 2.5%;
     left: 1%;
     /* left: 2.5%; */
     border-radius: 20px;
-    background-color: #fdfe7c;
+    /* background-color: #fdfe7c; */
+    background-color: #3d3661;
+}
+
+.appicon{
+    position: relative;
+    width: 50%;
+    height: 6%;
+    margin-left: 25%;
+    margin-top: 20%;
 }
     
 .heading{
     position: relative;
-    height: 10%;
-    color: black;
-    top: 12%;
-    margin-left: 10%;
-    /* border-bottom: 1px solid black; */
+    height: 5%;
+    width: 70%;
+    color: white;
+    top: 2%;
+    margin-left: 15%;
+    margin-bottom: 80%;
+    font-size: smaller;
+    border-bottom: 1px solid black;
 }
 
 .menubuttons{
@@ -25,9 +37,9 @@
     position: absolute;
     /* display: flex; */
     /* flex-direction: column; */
-    /* gap: 10px; */
+    /* gap: 5%; */
     background-color: transparent;
-    margin-top: 85%;
+    margin-top: 70%;
     margin-left: 10%;
 
 }
@@ -37,9 +49,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    padding-bottom: 25%;
+    padding-bottom: 75%;
     background-color: transparent;
-    color: black;
+    color: white;
     
 }
 
@@ -48,8 +60,8 @@
 }
 
 .settingsicon{
-    margin-left: 20%;
-    color: black;
+    margin-left: -15%;
+    color: white;
 }
 
 .user-avatar {
@@ -63,7 +75,7 @@
 
 .user-avatar:hover .logout-button {
     opacity: 1;
-    transform: translate(-10%, 70%);
+    transform: translate(-30%, 70%);
 }
 
 /* .user-avatar img {
@@ -81,7 +93,7 @@
     border-radius: 10px;
     background-color: #6458a2;
     left: 5%;
-    transform: translate(-10%, -30%);
+    transform: translate(-30%, -30%);
     opacity: 0;
     transition: 0.6s cubic-bezier(0, 0.39, 0.87, 1.08);
     cursor: pointer;

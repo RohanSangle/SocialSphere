@@ -1,12 +1,12 @@
 .post{
     position: absolute;
-    width: 71%;
-    height: 12.5%;
+    width: 78%;
+    height: 12%;
     top: 85%;
-    left: 12%;
+    left: 7%;
     border-radius: 20px;
-    background-color: lightskyblue;
-    color: black;
+    background-color: #40464d;
+    color: white;
 }
 
 .posticons{

@@ -9,10 +9,13 @@ import { FaRegBookmark } from "react-icons/fa";
 // import { FaBookmark } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
 
+import appicon from '../../assets/socialsphere-icon.png'
+
 const MenuBar = () => {
   return (
     <div className='menubar'>
-        <h4 className='heading'>SocialSphere</h4>
+        <img className='appicon' src={appicon} alt="" />
+        <h4 className='heading'>Veblog</h4>
 
         <div className='menubuttons'>
             <div className='icons'><RiHome3Line /></div>
