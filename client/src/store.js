@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit'
-import postreducer from './reducers/posts.js'
+import {reducers} from './reducers'
 
 export default configureStore({
-  reducer: {
-    posts:postreducer,
-  },
+  // reducer: {
+  //   posts:postreducer,
+
+  // },
+  reducer: reducers,
 })
