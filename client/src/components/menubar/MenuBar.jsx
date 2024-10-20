@@ -15,7 +15,7 @@ const MenuBar = () => {
   return (
     <div className='menubar'>
         <img className='appicon' src={appicon} alt="" />
-        <h4 className='heading'>Veblog</h4>
+        <h4 className='heading'>SocialSphere</h4>
 
         <div className='menubuttons'>
             <div className='icons'><RiHome3Line /></div>
