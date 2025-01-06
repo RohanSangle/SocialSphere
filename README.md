@@ -15,7 +15,11 @@ Designed a custom state management solution using Redux Toolkit that streamlined
 
 ## Screenshots
 
---will add soon--
+[![photo-2025-01-06-22-01-31.jpg](https://i.postimg.cc/QdFvVVLs/photo-2025-01-06-22-01-31.jpg)](https://postimg.cc/68NMmW51)
+
+[![photo-2025-01-06-22-01-32.jpg](https://i.postimg.cc/Cx9X8YY8/photo-2025-01-06-22-01-32.jpg)](https://postimg.cc/XrcsMRrN)
+
+[![photo-2025-01-06-22-01-33.jpg](https://i.postimg.cc/PqZczcrR/photo-2025-01-06-22-01-33.jpg)](https://postimg.cc/gwzNGghV)
 
 ## Tech Stack
 
